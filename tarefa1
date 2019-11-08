@@ -1,0 +1,241 @@
+import pandas as pd
+import numpy as np
+
+op = int(input('Digite a rodada desejada: '))
+
+selecao = ['atletas.rodada_id', 'atletas.clube_id', 'FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A',
+           'CA', 'I', 'CV', 'PP', 'GC', 'DP']
+
+if op == 1:
+    rodada1 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-1.csv')
+    df = rodada1.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+elif op == 2:
+    rodada2 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-2.csv')
+    df = rodada2.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op ==3:
+    rodada3 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-3.csv')
+    df = rodada3.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 4:
+    rodada4 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-4.csv')
+    df = rodada4.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 5:
+    rodada5 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-5.csv')
+    df = rodada5.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 6:
+    rodada6 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-6.csv')
+    df = rodada6.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 7:
+    rodada7 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-7.csv')
+    df = rodada7.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 8:
+    rodada8 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-8.csv')
+    df = rodada8.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 9:
+    rodada9 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-9.csv')
+    df = rodada9.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 10:
+    rodada10 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-10.csv')
+    df = rodada10.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 11:
+    rodada11 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-11.csv')
+    df = rodada11.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 12:
+    rodada12 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-12.csv')
+    df = rodada12.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 13:
+    rodada13 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-13.csv')
+    df = rodada13.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 14:
+    rodada14 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-14.csv')
+    df = rodada14.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 15:
+    rodada15 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-15.csv')
+    df = rodada15.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 16:
+    rodada16 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-16.csv')
+    df = rodada16.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 17:
+    rodada17 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-17.csv')
+    df = rodada17.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 18:
+    rodada18 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-18.csv')
+    df = rodada18.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 19:
+    rodada19 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-19.csv')
+    df = rodada19.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 20:
+    rodada20 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-20.csv')
+    df = rodada20.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 21:
+    rodada21 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-21.csv')
+    df = rodada21.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 22:
+    rodada22 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-22.csv')
+    df = rodada22.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 23:
+    rodada23 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-23.csv')
+    df = rodada23.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 24:
+    rodada24 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-24.csv')
+    df = rodada24.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 25:
+    rodada25 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-25.csv')
+    df = rodada25.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 26:
+    rodada26 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-26.csv')
+    df = rodada26.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 27:
+    rodada27 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-27.csv')
+    df = rodada27.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 28:
+    rodada28 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-28.csv')
+    df = rodada28.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+elif op == 29:
+    rodada29 = pd.read_csv('D:/Aender/caRtola-master/data/2019/rodada-29.csv')
+    df = rodada29.filter(items=selecao)
+    agrupar = df.groupby(['atletas.clube_id', 'atletas.rodada_id'])
+
+    print(agrupar['FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A', 'CA', 'I', 'CV', 'PP', 'GC',
+                  'DP'].agg(np.sum))
+
+else:
+    print('Apenas rodadas de 1 a 29')
