@@ -1,0 +1,14 @@
+import pandas as pd
+
+op = int(input('Digite a rodada desejada: '))
+
+path = "E:/aender/caRtola-master/data/2019/rodada-" + str(op) + ".csv"
+
+df = pd.read_csv(path, usecols = ['atletas.rodada_id', 'atletas.clube_id', 'FS', 'RB', 'PE', 'FC',
+                                  'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A',
+                            'CA', 'I', 'CV', 'PP', 'GC', 'DP'])
+
+df = df[['atletas.rodada_id', 'atletas.clube_id', 'FS', 'RB', 'PE', 'FC', 'G', 'FF', 'FT', 'FD', 'DD', 'GS', 'SG', 'A',
+           'CA', 'I', 'CV', 'PP', 'GC', 'DP']].groupby(["atletas.clube_id", "atletas.rodada_id"]).sum()
+
+print(df)
